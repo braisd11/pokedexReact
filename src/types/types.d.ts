@@ -12,3 +12,8 @@ export type PokemonDetails = {
     attack: number;
     defense: number;
 }
+
+export type Item = {
+    id: string;
+    name: string;
+}

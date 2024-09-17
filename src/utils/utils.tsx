@@ -10,6 +10,10 @@ export function formatPokemonName(name: string): string {
   } else return name;
 }
 
+export function formatItemName(name:string): string  {
+  const formattedName = name.toLowerCase().replace(/[^a-z0-9]/g, '-'); 
+  return formattedName;
+}
 
 export function waitFor (time: number): Promise<void>{
   return new Promise((resolve) => setTimeout(resolve, time))
